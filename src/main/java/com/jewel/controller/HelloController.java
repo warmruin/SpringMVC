@@ -4,5 +4,7 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class HelloController {
-hello啊
+    public static void main(String[] args) {
+        System.out.println("Today is Thursday!");
+    }
 }
