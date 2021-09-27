@@ -32,4 +32,11 @@ public class HelloController {
         System.out.println("id is:" +id);
         return "success";
     }
+
+
+    @RequestMapping("/testparam")
+
+    public String testparam(){
+        return "test_param";
+    }
 }
