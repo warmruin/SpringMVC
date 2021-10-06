@@ -36,7 +36,9 @@ public class HelloController {
 
     @RequestMapping("/testparam")
 
-    public String testparam(){
-        return "test_param";
+    public String testparam(String username,String password)
+    {
+        System.out.println("username:"+username+"password"+password);
+        return "success";
     }
 }
