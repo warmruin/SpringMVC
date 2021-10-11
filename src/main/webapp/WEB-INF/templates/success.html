@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-success 成功！
-<a th:href="@{/testparam/(username='admin',password='123455')}">测试requestmapping 支持路径中的占位符-->testpath</a><br/>
+success 成功！<br>
+<p th:text="${testRequestScope}"></p>
 
 </body>
 </html>
