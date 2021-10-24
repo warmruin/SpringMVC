@@ -41,4 +41,10 @@ public class HelloController {
         System.out.println("username:"+username+"password"+password);
         return "success";
     }
+
+
+    @RequestMapping("/test_view")
+    public  String testView(){
+        return "test_view";
+    }
 }
