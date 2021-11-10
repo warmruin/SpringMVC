@@ -2,21 +2,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springMVC-demo1</artifactId>
+        <groupId>com.jewel.mvc</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
+    <packaging>war</packaging>
 
-    <groupId>com.jewel.mvc</groupId>
-    <artifactId>springMVC-demo1</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>SpringMVC-jsp</module>
-        <module>SpringMVC-RestFulDemo</module>
-    </modules>
-    <packaging>pom</packaging>
+    <artifactId>SpringMVC-RestFulDemo</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
     <dependencies>
         <!-- SpringMVC -->
         <dependency>
@@ -47,5 +47,4 @@
             <version>3.0.12.RELEASE</version>
         </dependency>
     </dependencies>
-
 </project>
