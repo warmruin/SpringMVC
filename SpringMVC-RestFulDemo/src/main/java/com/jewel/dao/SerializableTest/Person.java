@@ -18,6 +18,8 @@ public class Person implements Serializable {
      * @param age  年龄
      */
     public Person(String name, int age) {
+
+        System.out.println("反序列化，你调用我了吗？");
         this.name = name;
         this.age = age;
     }

@@ -14,7 +14,7 @@ public class WriteObject {
             oos.writeObject(person);
 
 
-            //todo 序列化教程 https://www.cnblogs.com/9dragon/p/10901448.html
+            //todo 序列化教程
         } catch (Exception e) {
             e.printStackTrace();
         }
