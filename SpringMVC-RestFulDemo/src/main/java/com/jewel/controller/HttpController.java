@@ -4,7 +4,11 @@ package com.jewel.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+/**
+ * @author Cris
+ */
 @Controller
 public class HttpController {
 
@@ -13,6 +17,17 @@ public class HttpController {
     public String testRequestBody  (@RequestBody String requestBody){
     System.out.println("requestBody"+requestBody);
     return "success";
+    }
+
+
+    /**
+     * 测试响应主体
+     * 加上responseBody 变为返回到浏览器的响应体
+     * @return {@link String}
+     */@RequestMapping("/testResponseBody")
+    @ResponseBody
+    public String testResponseBody(){
+        return "success";
     }
 }
 
