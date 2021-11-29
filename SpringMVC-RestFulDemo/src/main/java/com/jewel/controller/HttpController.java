@@ -22,7 +22,7 @@ public class HttpController {
 
     /**
      * 测试响应主体
-     * 加上responseBody 变为返回到浏览器的响应体
+     * 加上responseBody  变为返回到浏览器的响应体
      * @return {@link String}
      */@RequestMapping("/testResponseBody")
     @ResponseBody
