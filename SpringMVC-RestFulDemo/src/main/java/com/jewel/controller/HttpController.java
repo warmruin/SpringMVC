@@ -29,6 +29,14 @@ public class HttpController {
     public String testResponseBody(){
         return "success";
     }
+
+
+    @RequestMapping("/testAjax")
+    @ResponseBody
+    public String testAjax(String username, String password){
+        System.out.println("username:"+username+",password:"+password);
+        return "hello,ajax";
+    }
 }
 
 

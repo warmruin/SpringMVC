@@ -15,5 +15,32 @@
     密码：<input type="text" name="password"><br>
     <input type="submit" value="测试@RequestBody">
 </form>
+
+<div id="app">
+    <a @click="testAxios" th:href="@{/testAjax}">SpringMVC来处理Ajax</a>
+</div>
+    <script type="text/javascript" th:src="@{/static/js/vue.js}"></script>
+    <script type="text/javascript" th:src="@{/static/js/axios.min.js}"></script>
+    <script type="text/javascript">
+        var vue = new Vue({
+            el:"#app",
+            methods:{
+                testAxios:function (event) {
+                    axios({
+                        method:"post",
+                        url:event.target.href,
+                        params:{
+                            username:"admin",
+                            password:"123456"
+                        }
+                    }).then(function (response) {
+                        alert(response.data);
+                    });
+                    event.preventDefault();
+                }
+            }
+        });
+    </script>
+
 </body>
 </html>
